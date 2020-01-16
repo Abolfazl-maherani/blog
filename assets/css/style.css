@@ -1,0 +1,109 @@
+/* reset style */
+@import "normalize.css";
+@font-face{
+    font-family:iran_sans;
+    src: url(../font/IRANSans.ttf);
+    font-weight:400;
+}
+@font-face{
+    font-family:iran_sans_num;
+    src: url(../font/sans_num.woff2);
+    font-weight:400;
+}
+/* config */
+::-moz-selection {
+    background: #00a5d1;
+    color: #ffffff;
+}
+
+::selection {
+    background: #00a5d1;
+    color: #ffffff;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+* {
+    direction: rtl;
+    font-size: 13px;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: "sans_num", "iranSANS";
+
+
+}
+
+a,
+a:hover,
+a:focus {
+    color: unset;
+    text-decoration: none;
+    outline: none;
+
+    /*display: flex*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0;
+    font-family: iranSANS, BYekan, arial;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    font-size: 13px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clear {
+    height: 48px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* end config */
+/* start */
+/* nav */
+nav{
+    width: 100%;
+    background: #2a2a2b;
+}
