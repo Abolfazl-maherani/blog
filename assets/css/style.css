@@ -33,7 +33,7 @@
     font-size: 13px;
     font-weight: normal;
     box-sizing: border-box;
-    font-family: "sans_num", "iranSANS";
+    font-family: "iran_sans_num", "iran_sans";
 
 
 }
@@ -62,7 +62,7 @@ h5,
 h6 {
     font-weight: 500;
     margin: 0;
-    font-family: iranSANS, BYekan, arial;
+    /*font-family: iranSANS, BYekan, arial;*/
 }
 
 h2 {
@@ -144,7 +144,7 @@ ul.menu_list {
 
 .menu_link:hover {
     background: #1d1d1d;
-    transition: .5 s2;
+    transition: .5s;
 }
 
 .active_menu {
@@ -199,7 +199,7 @@ ul.menu_list {
 }
 
 /*aside search*/
-.frm_search, .search,.box_inpt,.frm_box {
+.frm_search, .search, .box_inpt, .frm_box {
     width: 100%;
     display: flex;
     position: relative;
@@ -210,21 +210,67 @@ ul.menu_list {
     padding-right: 0 !important;
 }
 
-.search,.box_inpt {
+.search, .box_inpt {
     border: none;
     padding: 10px 7px;
     border-top: 1px solid #e6e6e6 !important;
     border-bottom: 1px solid #e6e6e6 !important;
 }
+
 /*email*/
-.btn_Esend{
+.btn_Esend {
     color: #58c93b;
     font-size: 20px;
     position: absolute;
-    background:none;
+    background: none;
     height: 100%;
     border: 0;
     display: flex;
     align-items: center;
-    left:-5px;
+    left: -5px;
+}
+
+/*section*/
+section {
+    margin-right: 80px;
+}
+
+.img_post_fully {
+    width: 100%;
+    height: 350px;
+}
+
+.txt_post {
+    padding: 5px 10px;
+}
+
+.post_titr {
+    margin-bottom: 20px;
+}
+
+.txt_titr_bold {
+    color: #4f4d4e;
+    font-weight: 700;
+}
+.post{
+    position: relative;
+}
+
+.paragraph {
+    color: #606060;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.continue_reding{
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px 15px;
+    color: #c2c2c2;
+    border-radius: 20px;
+    border: 1px solid #c2c2c2;
+};
 }
