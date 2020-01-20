@@ -110,7 +110,7 @@ a {
 nav {
     width: 100%;
     background: #292929;
-    margin-bottom: 5rem;
+    /*margin-bottom: 5rem;*/
     border-bottom: 4px solid #1e1e1e;
     display: flex;
     position: relative;
@@ -169,6 +169,10 @@ ul.menu_list {
 
 .all_content {
     display: flex;
+    padding: 5rem 0 0 0;
+    border-right: 1px solid #eee;
+    box-shadow: 0 0 8px 6px #eee;
+    border-left: 1px solid #eee;
 }
 
 .box_aside {
@@ -252,8 +256,11 @@ section {
     color: #4f4d4e;
     font-weight: 700;
 }
-.post{
+
+.post {
     position: relative;
+    margin-bottom: 30px;
+    padding: 0 0 10px;
 }
 
 .paragraph {
@@ -263,14 +270,59 @@ section {
     text-align: justify;
     margin-bottom: 20px;
 }
-.continue_reding{
-    
+
+.continue_reding {
+
     position: absolute;
-    left: 0;
+    left: 20px;
     bottom: 0;
     padding: 5px 15px;
     color: #c2c2c2;
     border-radius: 20px;
     border: 1px solid #c2c2c2;
-};
+}
+
+.continue_reding:hover {
+    background: #58c93b;
+    color: #fff;
+    transition: .7s ease;
+}
+
+.bottom_section {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+
+}
+.next_back{
+    position: relative;
+
+}
+.bottom_section .bn_link  {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    color: #58c93b;
+    font-size: 13px;
+    margin: 0 5px;
+    border: 1px solid #58c93b ;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.next_back:first-child:hover{
+    transform: translateX(5px);
+    transition: .4s ease-in-out;
+
+}
+.next_back:last-child:hover{
+    transform: translateX(-5px);
+    transition: .4s ease-in-out;
+}
+.ico_bn
+{
+    padding: 0 5px;
 }
