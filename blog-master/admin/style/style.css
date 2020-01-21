@@ -1,10 +1,15 @@
 @import "maine.css";
+section{
+    display: flex;
+    flex-direction: column;
+}
 aside{
     background: #ffffff;
     width: 200px;
     height: 100vh;
     float: right;
     margin-left: 20px;
+    position:fixed;
 }
 .box_content ,section{
     padding: 40px 15px;
@@ -123,7 +128,10 @@ a{
 
 }
 .clear{
-    clear: right;
+    float: right;
+    width:200px ;
+    height: 100vh;
+    margin-left: 20px;
 }
 .sec_box{
     padding: 5px;
@@ -154,4 +162,11 @@ a{
 }
 .item_asd{
     margin-top: 20px;
+}
+/* form */
+.frm_m input,.frm_m textarea{
+    border: 0;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
 }
