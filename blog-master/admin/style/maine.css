@@ -1,0 +1,40 @@
+@font-face {
+    font-family: iranSANS;
+    src: url('../font/IRANSans.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: sans_num;
+    src: url('../font/sans_num.woff2');
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+body {
+    background: #EEEEEE;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+* {
+    direction: rtl;
+    font-size: 12px;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: "sans_num", "iranSANS";
+
+
+}
+.row {
+    display: flex;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

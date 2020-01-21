@@ -1,0 +1,54 @@
+@import "maine.css";
+.box_up{
+    width: 800px;
+    margin: 100px auto;
+    padding: 10px 5px;
+    /*min-height: 36px;*/
+    /*background: #713868;*/
+}
+/*outher*/
+
+/*comment*/
+
+.frm_comment input,textarea{
+    background-color: rgb(228, 228, 228););
+    border: none;
+    outline: none;
+    padding: 5px 35px
+}
+#comment{
+    padding: 20px !important;
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom:10px;
+    height: 150px;
+}
+.frm_comment input{
+    margin-bottom: 10px;
+}
+
+#name_comment{
+
+    background-position: right -15px top 5px;
+    background-repeat: no-repeat;
+
+}
+#email_comment,#name_comment{
+    background-image: url("../media/ico/cmnt.png") ;
+    height: 31px;
+    max-height: 31px;
+}
+#email_comment{
+    background-position: right -10px top -31px;
+    background-repeat: no-repeat;
+}
+#btn_comment{
+    background: #c97858;
+    border: 0;
+    outline: 0;
+    color: #FFFFFF;
+    margin-right: 20px;
+    height: 31px;
+    padding: 0 10px;
+}
