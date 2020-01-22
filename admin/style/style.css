@@ -1,20 +1,24 @@
 @import "maine.css";
-section{
+
+section {
     display: flex;
     flex-direction: column;
 }
-aside{
+
+aside {
     background: #ffffff;
     width: 200px;
     height: 100vh;
     float: right;
     margin-left: 20px;
-    position:fixed;
+    position: fixed;
 }
-.box_content ,section{
+
+.box_content, section {
     padding: 40px 15px;
 }
-.avatar{
+
+.avatar {
     width: 100px;
     height: 100px;
     position: relative;
@@ -23,9 +27,10 @@ aside{
 
 }
 
-.item_asd{
+.item_asd {
     margin-bottom: 50px;
 }
+
 .top {
     width: 100%;
     justify-content: center;
@@ -33,13 +38,15 @@ aside{
     flex-direction: column;
 
 }
-.picture{
+
+.picture {
     width: 100%;
     height: 100%;
     border-radius: 100%;
 
 }
-.setting_ico{
+
+.setting_ico {
     position: absolute;
     left: 0;
     top: 0;
@@ -56,28 +63,33 @@ aside{
     align-items: center;
 
 }
-a{
+
+a {
     text-decoration: none;
     outline: none;
 }
-.ico{
+
+.ico {
     color: #2e699c;
     font-size: 19px;
 }
-.add{
+
+.add {
     margin-top: 5px;
 
 }
-.add a{
+
+.add a {
     color: #357191;
 
 }
 
-.stitle{
+.stitle {
     color: #686d6d;
     font-size: 11px;
 }
-.item_link{
+
+.item_link {
     display: flex;
     width: 100%;
     color: #686d6d;
@@ -87,36 +99,41 @@ a{
     position: relative;
 
 }
-.active{
+
+.active {
     background: #d8dddd;
 }
-.active:before{
+
+.active:before {
     content: "";
     width: 3px;
     height: 100%;
-    background:  #ca4275;
+    background: #ca4275;
     position: absolute;
     right: -3px;
     top: 0;
 
 }
-.title_red{
+
+.title_red {
     color: #ca4275;
     font-size: 13px;
 
 }
 
-.item_link:hover
-{
+.item_link:hover {
     background: #d8dddd;
 }
-.item_link i{
+
+.item_link i {
     margin-left: 5px;
 }
-.middle{
+
+.middle {
     flex-direction: column;
 }
-.an_box{
+
+.an_box {
 
 
     text-align: center;
@@ -127,31 +144,37 @@ a{
     height: 150px;
 
 }
-.clear{
+
+.clear {
     float: right;
-    width:200px ;
+    width: 200px;
     height: 100vh;
     margin-left: 20px;
 }
-.sec_box{
+
+.sec_box {
     padding: 5px;
     background: #fff;
     margin: 5px;
 }
-.title{
+
+.title {
     font-size: 14px;
     color: #444444;
     font-weight: bold;
 }
-.header_box{
+
+.header_box {
     display: flex;
     justify-content: space-between;
 }
-.bottom_sec{
+
+.bottom_sec {
     height: 350px;
     position: relative;
 }
-.content_b{
+
+.content_b {
     position: absolute;
     /* left: 50%; */
     width: 100%;
@@ -160,13 +183,121 @@ a{
     display: flex;
     align-items: center;
 }
-.item_asd{
+
+.item_asd {
     margin-top: 20px;
 }
-/* form */
-.frm_m input,.frm_m textarea{
+
+/* form  style*/
+fieldset {
+    border: 2px dashed #d2d2d2;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+
+}
+
+legend {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ca4275;
+}
+
+.frm_m input, .frm_m textarea, .frm_m select, .frm_m option {
     border: 0;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
     outline: none;
+    width: 100%;
+    display: block;
+    resize: vertical;
+    border-right: 2px solid #979797;
+    margin-bottom: 10px;
+    color: #2e699c;
+
+}
+
+.frm_m *:focus {
+    transition: .4s ease-in;
+    border-right: 2px solid #ca4275;
+}
+
+.frm_m button {
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: 700;
+
+}
+
+.frm_m button[type=reset] {
+    background: #ca4275;
+}
+.bad_ico{
+    color: #ca4275;
+}
+.good_ico{
+    color: #2e699c;
+}
+.frm_m button[type=reset]:hover {
+    transition: .3s cubic-bezier(.45, .05, .55, .95);
+    color: #ca4275;
+    background: none;
+    box-shadow: 0 0 1px 1px;
+}
+
+.frm_m button[type=button], .frm_m button[type=submit], .unlink_btn:hover {
+    background: #2e699c;
+}
+
+.frm_m button[type=button]:hover, .frm_m button[type=submit]:hover, .link_btn:hover {
+    transition: .3s cubic-bezier(.45, .05, .55, .95);
+    color: #2e699c;
+    background: none;
+    box-shadow: 0 0 1px 1px;
+
+}
+
+.d_flex {
+    display: flex;
+}
+
+.bx_menu {
+    padding: 0 10px;
+
+}
+
+/*box lost*/
+.box_list {
+    display: block;
+}
+
+.box_list div.item_list {
+    display: flex;
+    box-shadow: 0 0 2px 0;
+    padding: 5px;
+    /*background: #fff;*/
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list_title {
+    background: #e1e1e1;
+    padding: 5px 10px;
+    color: #2e699c;
+    font-size: 13px;
+
+}
+
+.list_ico {
+    display: flex;
+}
+
+.list_ico span i {
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
 }
