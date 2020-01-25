@@ -47,9 +47,16 @@ aside {
 }
 
 .setting_ico {
-    position: absolute;
+
     left: 0;
     top: 0;
+
+}
+.filemanager{
+    top: 0;
+    right: 0;
+}
+.sub_avatar{
     background: #e0e0e0;
     width: 30px;
     height: 30px;
@@ -61,6 +68,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 
 }
 
@@ -276,11 +284,12 @@ legend {
 .box_list div.item_list {
     display: flex;
     box-shadow: 0 0 2px 0;
-    padding: 5px;
+    /*padding: 5px;*/
     /*background: #fff;*/
     margin-bottom: 5px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
@@ -300,4 +309,14 @@ legend {
     margin: 0 5px;
     font-size: 25px;
     cursor: pointer;
+}
+.list_text{
+    display: flex;
+    align-items: center;
+}
+.list_img{
+    width: 100px;
+    height: 60px;
+
+
 }
