@@ -4,7 +4,9 @@ section {
     display: flex;
     flex-direction: column;
 }
-
+.container{
+    width: 100%;
+}
 aside {
     background: #ffffff;
     width: 200px;
