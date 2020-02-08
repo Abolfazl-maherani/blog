@@ -307,7 +307,7 @@ legend {
     display: flex;
 }
 
-.list_ico span i {
+.list_ico a i {
     margin: 0 5px;
     font-size: 25px;
     cursor: pointer;

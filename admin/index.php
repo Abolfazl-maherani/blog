@@ -22,7 +22,7 @@
             <div class="add"><a href="#">افزودن نام کاربری</a></d                                                                                                                                                                                                                                                                           iv>
         </div>
         <div class="middle item_asd row">
-            <a href="dashboard.php" class="stitle item_link active"><i class="ico fa fa-credit-card-alt "></i> داشبورد</a>
+            <a href="index.php" class="stitle item_link active"><i class="ico fa fa-credit-card-alt "></i> داشبورد</a>
 
             <a href="content.php" class="stitle item_link"><i class="ico fa fa-video-camera"></i> محتوا ها</a>
             <a href="post.php" class="stitle item_link"><i class="ico fa fa-comment"></i> افزودن پست</a>

@@ -24,7 +24,7 @@
                     iv>
                 </div>
                 <div class="middle item_asd row">
-                    <a href="dashboard.php" class="stitle item_link "><i class="ico fa fa-credit-card-alt "></i> داشبورد</a>
+                    <a href="index.php" class="stitle item_link "><i class="ico fa fa-credit-card-alt "></i> داشبورد</a>
                     <a href="content.php" class="stitle item_link"><i class="ico fa fa-video-camera"></i> محتوا ها</a>
                     <a href="post.php" class="stitle item_link"><i class="ico fa fa-comment"></i> افزودن پست</a>
                     <a href="category.php" class="stitle item_link"><i class="ico fa fa-send"></i> دسته بندی</a>
@@ -62,8 +62,10 @@
         <div class="bx_menu span-md-6 ">
             <fieldset class="">
                 <legend>ایجاد منو</legend>
-                <form action="#" method="post" class="frm_m">
+                <form action="action/saveMenu.php" method="POST" class="frm_m">
                     <input type="text" placeholder="عنوان " name="title" title="نام منو را وارد کنید">
+<!--                    <input type="number" placeholder="ترتیب " name="order" title="ترتیب منو">-->
+                    <input type="text" placeholder="ادرس" name="address" title="ادرس">
                     <textarea rows="10" cols="10" type="text" placeholder="توضیحات " name="description"
                               title="توضیحات مربوط به ان را وارد کنید"></textarea>
                     <select name="parent" id="parent">
@@ -90,8 +92,8 @@
                             <h5 class="list_title"><?php echo $row['name'] ?> </h5>
                         </div>
                         <div class="list_ico">
-                            <span title="edit"><i class="fa fa-edit good_ico"></i></span>
-                            <span title="delete"><i class="fa fa-close bad_ico"></i></span>
+                            <a title="edit"><i class="fa fa-edit good_ico"></i></a>
+                            <a href="action/deleteaction.php?id=<?php echo $row['id']?>" title="delete"><i class="fa fa-close bad_ico"></i></a>
                         </div>
 
                     </div>
